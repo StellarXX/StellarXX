@@ -26,7 +26,6 @@ Partial Class AdminIndex
         DataGridView1 = New DataGridView()
         DataGridView2 = New DataGridView()
         Button1 = New Button()
-        Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
         Label1 = New Label()
@@ -74,18 +73,9 @@ Partial Class AdminIndex
         Button1.Text = "AUDIT"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(223, 353)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(75, 23)
-        Button2.TabIndex = 4
-        Button2.Text = "ADD"
-        Button2.UseVisualStyleBackColor = True
-        ' 
         ' Button3
         ' 
-        Button3.Location = New Point(223, 382)
+        Button3.Location = New Point(223, 353)
         Button3.Name = "Button3"
         Button3.Size = New Size(75, 23)
         Button3.TabIndex = 5
@@ -94,7 +84,7 @@ Partial Class AdminIndex
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(52, 405)
+        Button4.Location = New Point(223, 382)
         Button4.Name = "Button4"
         Button4.Size = New Size(75, 23)
         Button4.TabIndex = 6
@@ -175,7 +165,6 @@ Partial Class AdminIndex
         Controls.Add(Label1)
         Controls.Add(Button4)
         Controls.Add(Button3)
-        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(DataGridView2)
         Controls.Add(DataGridView1)
@@ -193,7 +182,6 @@ Partial Class AdminIndex
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label1 As Label
