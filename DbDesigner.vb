@@ -8,7 +8,7 @@ Public Class DbDesigner
     Public Shared Function LoginIndex()
         'log in
         'manipulate the database have category and department
-        Dim conDB As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lenovo\source\repos\JobDescriptionSystem\JDescDB.mdf")
+        Dim conDB As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\CYD\OTHERS MDF\JDescDB.mdf")
         Try
             conDB.Open()
             Dim sqlCom As New SqlCommand("Select Emp_Cat from tbl_Login where [Emp_ID] = @user and [Emp_Pass] = @pass", conDB)
@@ -20,7 +20,7 @@ Public Class DbDesigner
                 getDept.Parameters.AddWithValue("@userfind", Form1.TextBox1.Text)
                 Dim EmpDept As String = getDept.ExecuteScalar.ToString
                 If rst = "Admin" Then
-                    MsgBox("Welcome Admin from " & EmpDept)
+                    AdminIndex.Show()
                 ElseIf rst = "Head" Then
                     MsgBox("Welcome Head of " & EmpDept)
                 ElseIf rst = "Regular" Then
@@ -36,6 +36,13 @@ Public Class DbDesigner
                 conDB.Close()
             End If
         End Try
+    End Function
+
+    Public Shared Function AdminUpdate()
+
+    End Function
+
+    Public Shared Function SharedAdminInfo()
 
     End Function
 
