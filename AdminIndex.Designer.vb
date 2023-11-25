@@ -35,6 +35,17 @@ Partial Class AdminIndex
         Label5 = New Label()
         Label6 = New Label()
         Label7 = New Label()
+        Column1 = New DataGridViewTextBoxColumn()
+        Column2 = New DataGridViewTextBoxColumn()
+        Column3 = New DataGridViewTextBoxColumn()
+        Column4 = New DataGridViewTextBoxColumn()
+        Column5 = New DataGridViewTextBoxColumn()
+        Column6 = New DataGridViewTextBoxColumn()
+        Column7 = New DataGridViewTextBoxColumn()
+        Column8 = New DataGridViewTextBoxColumn()
+        Column9 = New DataGridViewTextBoxColumn()
+        Column10 = New DataGridViewTextBoxColumn()
+        Column11 = New DataGridViewTextBoxColumn()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
@@ -51,22 +62,24 @@ Partial Class AdminIndex
         ' DataGridView1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(186, 12)
+        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column6, Column7, Column8, Column9, Column10, Column11})
+        DataGridView1.Location = New Point(193, 12)
         DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(418, 226)
+        DataGridView1.Size = New Size(645, 226)
         DataGridView1.TabIndex = 1
         ' 
         ' DataGridView2
         ' 
         DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Location = New Point(364, 259)
+        DataGridView2.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5})
+        DataGridView2.Location = New Point(249, 259)
         DataGridView2.Name = "DataGridView2"
-        DataGridView2.Size = New Size(240, 213)
+        DataGridView2.Size = New Size(545, 213)
         DataGridView2.TabIndex = 2
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(223, 324)
+        Button1.Location = New Point(102, 402)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 3
@@ -75,7 +88,7 @@ Partial Class AdminIndex
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(223, 353)
+        Button3.Location = New Point(102, 364)
         Button3.Name = "Button3"
         Button3.Size = New Size(75, 23)
         Button3.TabIndex = 5
@@ -84,7 +97,7 @@ Partial Class AdminIndex
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(223, 382)
+        Button4.Location = New Point(102, 431)
         Button4.Name = "Button4"
         Button4.Size = New Size(75, 23)
         Button4.TabIndex = 6
@@ -98,6 +111,7 @@ Partial Class AdminIndex
         Label1.Size = New Size(129, 23)
         Label1.TabIndex = 7
         Label1.Text = "COMPLETE NAME"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label2
         ' 
@@ -106,6 +120,7 @@ Partial Class AdminIndex
         Label2.Size = New Size(129, 23)
         Label2.TabIndex = 8
         Label2.Text = "POSITION"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label3
         ' 
@@ -114,6 +129,7 @@ Partial Class AdminIndex
         Label3.Size = New Size(129, 23)
         Label3.TabIndex = 9
         Label3.Text = "DEPARTMENT"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label4
         ' 
@@ -151,11 +167,66 @@ Partial Class AdminIndex
         Label7.Text = "WEEK"
         Label7.TextAlign = ContentAlignment.TopCenter
         ' 
+        ' Column1
+        ' 
+        Column1.HeaderText = "Employee ID"
+        Column1.Name = "Column1"
+        ' 
+        ' Column2
+        ' 
+        Column2.HeaderText = "Employee Name"
+        Column2.Name = "Column2"
+        ' 
+        ' Column3
+        ' 
+        Column3.HeaderText = "Category"
+        Column3.Name = "Column3"
+        ' 
+        ' Column4
+        ' 
+        Column4.HeaderText = "Position"
+        Column4.Name = "Column4"
+        ' 
+        ' Column5
+        ' 
+        Column5.HeaderText = "Department"
+        Column5.Name = "Column5"
+        ' 
+        ' Column6
+        ' 
+        Column6.HeaderText = "Employee ID"
+        Column6.Name = "Column6"
+        ' 
+        ' Column7
+        ' 
+        Column7.HeaderText = "Employee Last Name"
+        Column7.Name = "Column7"
+        ' 
+        ' Column8
+        ' 
+        Column8.HeaderText = "Employee FIrst Name"
+        Column8.Name = "Column8"
+        ' 
+        ' Column9
+        ' 
+        Column9.HeaderText = "Employee Middle Initial"
+        Column9.Name = "Column9"
+        ' 
+        ' Column10
+        ' 
+        Column10.HeaderText = "Employee Position"
+        Column10.Name = "Column10"
+        ' 
+        ' Column11
+        ' 
+        Column11.HeaderText = "Employee Department"
+        Column11.Name = "Column11"
+        ' 
         ' AdminIndex
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(626, 484)
+        ClientSize = New Size(848, 484)
         Controls.Add(Label7)
         Controls.Add(Label6)
         Controls.Add(Label5)
@@ -171,7 +242,7 @@ Partial Class AdminIndex
         Controls.Add(PictureBox1)
         Name = "AdminIndex"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "AdminIndex"
+        Text = "ADMIN"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
@@ -191,4 +262,15 @@ Partial Class AdminIndex
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
 End Class
