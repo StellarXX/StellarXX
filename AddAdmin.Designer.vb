@@ -22,6 +22,7 @@ Partial Class AddAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label1 = New Label()
         TextBox1 = New TextBox()
@@ -33,7 +34,27 @@ Partial Class AddAdmin
         Column5 = New DataGridViewTextBoxColumn()
         Column6 = New DataGridViewTextBoxColumn()
         Column7 = New DataGridViewTextBoxColumn()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
+        Label6 = New Label()
+        Label7 = New Label()
+        Label8 = New Label()
+        Label9 = New Label()
+        ComboBox1 = New ComboBox()
+        RadioButton1 = New RadioButton()
+        RadioButton2 = New RadioButton()
+        RadioButton3 = New RadioButton()
+        ComboBox2 = New ComboBox()
+        ComboBox3 = New ComboBox()
+        TextBox2 = New TextBox()
+        TextBox3 = New TextBox()
+        TextBox4 = New TextBox()
+        TextBox5 = New TextBox()
+        DbDesignerBindingSource = New BindingSource(components)
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(DbDesignerBindingSource, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -74,7 +95,7 @@ Partial Class AddAdmin
         DataGridView1.Location = New Point(326, 24)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
-        DataGridView1.Size = New Size(744, 411)
+        DataGridView1.Size = New Size(744, 484)
         DataGridView1.TabIndex = 2
         ' 
         ' Column1
@@ -120,17 +141,201 @@ Partial Class AddAdmin
         Column7.Name = "Column7"
         Column7.ReadOnly = True
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(10, 74)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(73, 15)
+        Label2.TabIndex = 3
+        Label2.Text = "Employee ID"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(44, 143)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(64, 15)
+        Label3.TabIndex = 4
+        Label3.Text = "First Name"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(40, 191)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(79, 15)
+        Label4.TabIndex = 5
+        Label4.Text = "Middle Name"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(205, 142)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(54, 15)
+        Label5.TabIndex = 6
+        Label5.Text = "Surname"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(168, 173)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(37, 15)
+        Label6.TabIndex = 7
+        Label6.Text = "Suffix"
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(39, 226)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(55, 15)
+        Label7.TabIndex = 8
+        Label7.Text = "Category"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Location = New Point(58, 268)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(50, 15)
+        Label8.TabIndex = 9
+        Label8.Text = "Position"
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Location = New Point(49, 297)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(70, 15)
+        Label9.TabIndex = 10
+        Label9.Text = "Department"
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Location = New Point(211, 170)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(72, 23)
+        ComboBox1.TabIndex = 11
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.AutoSize = True
+        RadioButton1.Location = New Point(108, 225)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(48, 19)
+        RadioButton1.TabIndex = 12
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "User"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.AutoSize = True
+        RadioButton2.Location = New Point(162, 226)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(53, 19)
+        RadioButton2.TabIndex = 13
+        RadioButton2.TabStop = True
+        RadioButton2.Text = "Head"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton3
+        ' 
+        RadioButton3.AutoSize = True
+        RadioButton3.Location = New Point(214, 226)
+        RadioButton3.Name = "RadioButton3"
+        RadioButton3.Size = New Size(61, 19)
+        RadioButton3.TabIndex = 14
+        RadioButton3.TabStop = True
+        RadioButton3.Text = "Admin"
+        RadioButton3.UseVisualStyleBackColor = True
+        ' 
+        ' ComboBox2
+        ' 
+        ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Location = New Point(154, 268)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(121, 23)
+        ComboBox2.TabIndex = 15
+        ' 
+        ' ComboBox3
+        ' 
+        ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Location = New Point(154, 297)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(121, 23)
+        ComboBox3.TabIndex = 16
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(89, 66)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(129, 23)
+        TextBox2.TabIndex = 17
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(10, 118)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(129, 23)
+        TextBox3.TabIndex = 18
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.Location = New Point(170, 118)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(129, 23)
+        TextBox4.TabIndex = 19
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(10, 165)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(129, 23)
+        TextBox5.TabIndex = 20
+        ' 
+        ' DbDesignerBindingSource
+        ' 
+        DbDesignerBindingSource.DataSource = GetType(DbDesigner)
+        ' 
         ' AddAdmin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1108, 444)
+        ClientSize = New Size(1078, 513)
+        Controls.Add(TextBox5)
+        Controls.Add(TextBox4)
+        Controls.Add(TextBox3)
+        Controls.Add(TextBox2)
+        Controls.Add(ComboBox3)
+        Controls.Add(ComboBox2)
+        Controls.Add(RadioButton3)
+        Controls.Add(RadioButton2)
+        Controls.Add(RadioButton1)
+        Controls.Add(ComboBox1)
+        Controls.Add(Label9)
+        Controls.Add(Label8)
+        Controls.Add(Label7)
+        Controls.Add(Label6)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(DataGridView1)
         Controls.Add(TextBox1)
         Controls.Add(Label1)
         Name = "AddAdmin"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "ADMIN"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(DbDesignerBindingSource, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -145,4 +350,23 @@ Partial Class AddAdmin
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents DbDesignerBindingSource As BindingSource
 End Class
