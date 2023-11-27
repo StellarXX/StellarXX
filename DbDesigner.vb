@@ -8,7 +8,7 @@ Public Class DbDesigner
     Public Shared Function LoginIndex()
         'log in
         'manipulate the database have category and department
-        Dim conDB As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lenovo\source\repos\JobDescriptionSystem\JDescDB.mdf")
+        Dim conDB As New SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\CYD\OTHERS MDF\JDescDB.mdf")
         Try
             conDB.Open()
             Dim sqlCom As New SqlCommand("Select Emp_Cat from tbl_Login where [Emp_ID] = @user and [Emp_Pass] = @pass", conDB)
@@ -37,6 +37,8 @@ Public Class DbDesigner
             End If
         End Try
     End Function
+
+
 
     Public Shared Function AdminUpdate()
         'Add/Save, Update

@@ -23,7 +23,7 @@ Partial Class AddAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label1 = New Label()
         TextBox1 = New TextBox()
         DataGridView1 = New DataGridView()
@@ -53,6 +53,8 @@ Partial Class AddAdmin
         TextBox4 = New TextBox()
         TextBox5 = New TextBox()
         DbDesignerBindingSource = New BindingSource(components)
+        Button1 = New Button()
+        Button2 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         CType(DbDesignerBindingSource, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -80,15 +82,15 @@ Partial Class AddAdmin
         DataGridView1.AllowUserToDeleteRows = False
         DataGridView1.BackgroundColor = SystemColors.ControlDarkDark
         DataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Info
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.NullValue = Nothing
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = SystemColors.Info
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle2.NullValue = Nothing
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6, Column7})
         DataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically
@@ -305,11 +307,31 @@ Partial Class AddAdmin
         ' 
         DbDesignerBindingSource.DataSource = GetType(DbDesigner)
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(117, 389)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 21
+        Button1.Text = "Save"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(117, 418)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 22
+        Button2.Text = "Delete"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' AddAdmin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1078, 513)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
         Controls.Add(TextBox5)
         Controls.Add(TextBox4)
         Controls.Add(TextBox3)
@@ -369,4 +391,6 @@ Partial Class AddAdmin
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents DbDesignerBindingSource As BindingSource
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
